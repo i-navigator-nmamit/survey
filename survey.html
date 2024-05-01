@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display HTML Code</title>
+</head>
+<body>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;style&gt;
+
+body{
+font-family:Arial,sans-serif;
+background-color:#f4f4f4;
+}
+
+.container{
+width:80%;
+margin:0 auto;
+background-color: #fff;
+padding:20px;
+border-radius:5px;
+box-shadow:0 0 10px rgba(0,0,0.1);
+}
+
+form{
+display:grid;
+gap:10px;
+}
+
+label{
+font-weight:bold;
+display:flex;
+align-items:center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+width:calc(100%-20px);
+padding:8px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+margin-right:5px;
+}
+
+input[type="submit"]{
+background-color:#4caf50;
+color:white;
+border:none;
+padding:10px 20px;
+font-size:18px;
+border-radius:5px;
+cursor:pointer;
+transition:background-color 0.3s;
+}
+
+input=[type="submit"]:hover{
+background-color:#45a049;
+}
+
+&lt;/style&gt;
+&lt;title&gt;Survey Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;h1&gt;Survey on Your Topic&lt;/h1&gt;
+&lt;form action="submit_form.php" method="post"&gt;
+&lt;label for="name"&gt;Your Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name" required&gt;
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" required&gt;
+&lt;label for="age"&gt;Age: &lt;/label&gt;
+&lt;input type="number" id="age" name="age" required&gt;
+&lt;label for="gender"&gt;Gender: &lt;/label&gt;
+&lt;select id="gender" name="gender"&gt;
+&lt;option value="male"&gt;Male&lt;/option&gt;
+&lt;option value="female"&gt;Female&lt;/option&gt;
+&lt;option value="other"&gt;Other&lt;/option&gt;
+&lt;/select&gt;
+&lt;label&gt;Preferred Programming Languages:&lt;/label&gt;
+&lt;label for="java"&gt;Java&lt;/label&gt;
+&lt;input type="checkbox" id="java" name="languages[]" value="java"&gt;
+&lt;label for="python"&gt;Python&lt;/label&gt;
+&lt;input type="checkbox" id="python" name="languages[]" value="python"&gt;
+&lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
+&lt;input type="checkbox" id="javascript" name="languages[]" value="javascript"&gt;
+&lt;label&gt;How did you hear about us?&lt;/label&gt;
+&lt;input type="radio" id="friends" name="referrer" value="friends" checked="checked"&gt;
+&lt;label for="friends"&gt;Friends&lt;/label&gt;
+&lt;input type="radio" id="social-media" name="referrer" value="social-media"&gt;
+&lt;label for="social-media"&gt;Social Media&lt;/label&gt;
+&lt;input type="radio" id="others" name="referrer" value="others"&gt;
+&lt;label for="others"&gt;Others&lt;/label&gt;
+&lt;label for="comments"&gt;Comments: &lt;/label&gt;
+&lt;textarea id="comments" name="comments" rows="4"&gt;&lt;/textarea&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</body>
+</html>
